@@ -1,0 +1,30 @@
+{
+    "message": {
+
+    },
+    "label": {
+        "home": "家",
+        "about": "約",
+        "conquer": "征服する",
+        "exams": "テスト",
+        "question": "質問",
+        "report": "報告",
+        "settings": "設定",
+        "profile": "プロフィール情報",
+        "friends": "友達",
+        "recents": "最近",
+        "lesson": "レッスン",
+        "solo": "ソロ",
+        "level": "レベル"
+    },
+    "pagination": {
+        "size": "ページサイズ",
+        "showInfo": "表示中 {0} に {1} の {2} エントリ",
+        "to": "に",
+        "of": "の",
+        "first": "最初",
+        "prev": "前へ",
+        "next": "次",
+        "last": "過去"
+    }
+}

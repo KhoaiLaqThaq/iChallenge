@@ -1,0 +1,20 @@
+{
+    "message": {
+
+    },
+    "label": {
+        "home": "Trang chủ",
+        "about": "Về chúng tôi",
+        "conquer": "Chinh phục"
+    },
+    "pagination": {
+        "size": "ページサイズ",
+        "showInfo": "Hiển thị {0} đến {1} trong {2} mục",
+        "to": "đến",
+        "of": "của",
+        "first": "Đầu tiên",
+        "prev": "Trước",
+        "next": "Tiếp",
+        "last": "Cuối"
+    }
+}

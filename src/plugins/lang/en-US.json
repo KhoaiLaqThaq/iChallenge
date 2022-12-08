@@ -1,0 +1,30 @@
+{
+    "message": {
+
+    },
+    "label": {
+        "home": "Home",
+        "about": "About",
+        "conquer": "Conquer",
+        "exams": "Exams",
+        "question": "Questions",
+        "report": "Report",
+        "settings": "Settings",
+        "profile": "Profile information",
+        "friends": "Friends",
+        "recents": "Recents",
+        "lesson": "Lesson",
+        "solo": "Solo",
+        "level": "Level"
+    },
+    "pagination": {
+        "size": "Page size",
+        "showInfo": "Showing {0} to {1} of {2} entries",
+        "to": "to",
+        "of": "of",
+        "first": "First",
+        "prev": "Prev",
+        "next": "Next",
+        "last": "Last"
+    }
+}
