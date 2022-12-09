@@ -15,7 +15,17 @@
         "recents": "Recents",
         "lesson": "Lesson",
         "solo": "Solo",
-        "level": "Level"
+        "level": "Level",
+        "joined": "Joined",
+        "follow": "Follow",
+        "follower": "Follower",
+        "edit": "Edit",
+        "friend": "Friend",
+        "fastAccess": "Fast Access",
+        "notification": "Notification",
+        "created": {
+            "prioritized": "Prioritized"
+        }
     },
     "pagination": {
         "size": "Page size",

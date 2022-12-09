@@ -15,7 +15,8 @@ export default defineComponent({
         return {
             langs: [
                 { title: 'English', langValue: 'en-US' },
-                { title: 'Japanese', langValue: 'ja-JP'}
+                { title: 'Japanese', langValue: 'ja-JP'},
+                { title: 'Vietnamese', langValue: 'vi-VN'}
             ]
         }
     }

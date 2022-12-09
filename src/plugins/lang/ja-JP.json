@@ -15,7 +15,17 @@
         "recents": "最近",
         "lesson": "レッスン",
         "solo": "ソロ",
-        "level": "レベル"
+        "level": "レベル",
+        "joined": "参加しました",
+        "follow": "従う",
+        "follower": "フォロワー",
+        "edit": "編集",
+        "friend": "友達",
+        "fastAccess": "高速アクセス",
+        "notification": "通知",
+        "created": {
+            "prioritized": "優先される"
+        }
     },
     "pagination": {
         "size": "ページサイズ",

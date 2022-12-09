@@ -5,16 +5,36 @@
     "label": {
         "home": "Trang chủ",
         "about": "Về chúng tôi",
-        "conquer": "Chinh phục"
+        "conquer": "Chinh phục",
+        "exams": "Bài thi",
+        "question": "Câu hỏi",
+        "report": "Báo cáo",
+        "settings": "Cài đặt",
+        "profile": "Thông tin cá nhân",
+        "friends": "Bạn bè",
+        "recents": "Gần đây",
+        "lesson": "Khóa học",
+        "solo": "Thách đấu",
+        "level": "Cấp độ",
+        "joined": "Đã tham gia",
+        "follow": "Theo dõi",
+        "follower": "Người theo dõi",
+        "edit": "Chỉnh sửa",
+        "friend": "Bạn bè",
+        "fastAccess": "Truy cập nhanh",
+        "notification": "Thông báo",
+        "created": {
+            "prioritized": "Ưu tiên"
+        }
     },
     "pagination": {
-        "size": "ページサイズ",
-        "showInfo": "Hiển thị {0} đến {1} trong {2} mục",
+        "size": "Page size",
+        "showInfo": "Hiển thị {0} đến {1} của {2} mục",
         "to": "đến",
         "of": "của",
-        "first": "Đầu tiên",
+        "first": "Đầu",
         "prev": "Trước",
-        "next": "Tiếp",
+        "next": "Sau",
         "last": "Cuối"
     }
 }
