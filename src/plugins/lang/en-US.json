@@ -25,7 +25,14 @@
         "notification": "Notification",
         "created": {
             "prioritized": "Prioritized"
-        }
+        },
+        "time": {
+            "second": "Second",
+            "minute": "Minutes",
+            "hour": "Hour",
+            "day": "Day"
+        },
+        "showMore": "Show more"
     },
     "pagination": {
         "size": "Page size",

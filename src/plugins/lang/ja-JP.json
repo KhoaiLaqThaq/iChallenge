@@ -25,7 +25,14 @@
         "notification": "通知",
         "created": {
             "prioritized": "優先される"
-        }
+        },
+        "time": {
+            "second": "秒",
+            "minute": "分",
+            "hour": "時間",
+            "day": "日"
+        },
+        "showMore": "もっと見せる"
     },
     "pagination": {
         "size": "ページサイズ",

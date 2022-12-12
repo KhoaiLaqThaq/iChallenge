@@ -25,7 +25,14 @@
         "notification": "Thông báo",
         "created": {
             "prioritized": "Ưu tiên"
-        }
+        },
+        "time": {
+            "second": "Giây",
+            "minute": "Phút",
+            "hour": "Giờ",
+            "day": "Ngày"
+        },
+        "showMore": "Xem thêm"
     },
     "pagination": {
         "size": "Page size",
