@@ -4,10 +4,16 @@
             <img src="@/assets/images/winner.png" width="40" height="40">
             <div class="tooltip">{{ $t('label.conquer') }}</div>
         </router-link>
-        <router-link to="/exam">
+
+        <router-link v-if="cid" :to="{name: 'ExamPersonal', params: { cid: cid}}">
             <img src="@/assets/images/book.png" width="40" height="40">
             <div class="tooltip">{{ $t('label.exams') }}</div>
         </router-link>
+        <router-link v-else :to="{name: 'ExamCommon'}">
+            <img src="@/assets/images/book.png" width="40" height="40">
+            <div class="tooltip">{{ $t('label.exams') }}</div>
+        </router-link>
+
         <router-link to="/question">
             <img src="@/assets/images/question.png" width="40" height="40">
             <div class="tooltip">{{ $t('label.question') }}</div>
@@ -23,9 +29,19 @@
     </div>
 </template>
 <script lang="ts">
+import { useStore } from '@/store';
+import { computed } from 'vue';
+
 
 export default {
-    
+    setup() {
+        const { state } = useStore();
+        const accountIdSignedIn = computed(() => state.account.cid);
+
+        return {
+            cid: accountIdSignedIn,
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
