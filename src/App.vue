@@ -1,27 +1,46 @@
 <template>
   <the-header></the-header>
-  <div class="content">
-    <!-- sidebar -->
+  <div class="row content">
+    <!-- left-bar -->
     <the-sidebar class="col-3"></the-sidebar>
-    <!-- /sidebar -->
-    <router-view class="col-6"/>
+    <!-- /left-bar -->
 
-    <div class="col-3">
+    <Loading v-if="loading" />
+    
+    <!-- content -->
+    <router-view class="col-6 py-3"></router-view>
+    <!-- /content -->
 
-    </div>
+    <!-- right-bar -->
+    <the-right-bar class="col-3"></the-right-bar>
+    <!-- /right-bar -->
+
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
 
 import TheHeader from "@/components/decorator/TheHeader.vue";
 import TheSidebar from "@/components/decorator/TheSidebar.vue";
+import TheRightBar from "@/components/decorator/TheRightBar.vue";
+import Loading from '@/components/common/Loading/FLoading.vue'
+import { useStore } from "./store";
 
 export default defineComponent({
   components: {
     TheHeader,
-    TheSidebar
+    TheSidebar,
+    TheRightBar,
+    Loading,
+  },
+  setup() {
+    const {state} = useStore();
+    const loading = computed(() => state.loading)
+
+    return {
+      loading
+    }
   }
 })
 </script>
@@ -32,11 +51,12 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow-x: hidden
 }
 
 .content {
-  display: flex;
+  // display: flex;
   background-color: #f0f2f5;
-  height: 100vh;
+  // height: 100vh;
 }
 </style>

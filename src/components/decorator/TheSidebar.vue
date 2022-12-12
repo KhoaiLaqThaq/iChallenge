@@ -1,13 +1,15 @@
 <template>
-    <div class="container-brand py-3">
-        <ul>
-            <li v-for="(item, index) in sidebar" :key="index">
-                <router-link :to="{ name: item.name }" exact class="py-2 ps-2">
-                    <img :src="getImgURL(item.imageURL)" alt="#" width="36" height="36">
-                    <span class="ps-3">{{ $t(item.title) }}</span>
-                </router-link>
-            </li>
-        </ul>
+    <div>
+        <div class="container-brand py-3">
+            <ul>
+                <li v-for="(item, index) in sidebar" :key="index">
+                    <router-link :to="{ name: item.name }" exact class="py-2 ps-2">
+                        <img :src="getImgURL(item.imageURL)" alt="#" width="36" height="36">
+                        <span class="ps-3">{{ $t(item.title) }}</span>
+                    </router-link>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 <script lang="ts">
@@ -35,6 +37,7 @@ export default defineComponent({
 .container-brand {
     position: relative;
     display: grid;
+    height: calc(100vh - 58px);
 
     ul {
         list-style: none;
@@ -60,7 +63,7 @@ export default defineComponent({
             }
             
             &:hover {
-                background-color: #a8a8a85a;
+                background-color: #d0d0d075;
                 border-radius: 5px;
             }
         }

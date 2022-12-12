@@ -1,5 +1,7 @@
 <template>
+  <div class="progress-loading">
     <div class="loader"></div>
+  </div>
 </template>
 <script lang="ts">
 export default {
@@ -7,11 +9,27 @@ export default {
 }
 </script>
 <style scoped>
+body {
+  overflow: hidden;
+}
+.progress-loading {
+  /* width: 100%;
+  height: 100vh; */
+  background-color: #ffffffa0;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+}
 .loader {
   width: 48px;
   height: 48px;
   margin: auto;
   position: relative;
+  top: 50%;
 }
 
 .loader:before {

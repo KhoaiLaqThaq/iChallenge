@@ -44,7 +44,7 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .rightbar {
-    height: 100vh;
+    height: calc(100vh - 58px);
     position: relative;
     width: 100%;
     text-align: left;
