@@ -1,6 +1,6 @@
 <template>
     <div class="mx-auto box">
-        <div class="row p-2">
+        <div class="row">
             <div class="col-3">
                 <img :src="getRankingImageURL()" alt="" width="127" height="127">
                 <div class="title">
@@ -11,11 +11,28 @@
                     </div>
                 </div>
             </div>
-            <div class="col-9 d-flex">
+            <div class="col-6 text-start">
                 <div class="profile-username mt-3">
                     <span>{{ account.username }}</span>
                     <div class="fullname">{{ account.fullname }}</div>
                 </div>
+                <div class="account-info">
+                    <div class="account__time">
+                        <img src="@/assets/images/icon/icon_oclock.svg" alt="">
+                        <span>{{ $t('label.joined') }}</span>
+                        <span class="fw-bold">{{ $d(account.createdDate, 'short') }}</span>
+                    </div>
+
+                    <div class="account__connect">
+                        <img src="@/assets/images/icon/icon_friend.svg" alt="">
+                        <span class="follow">{{ $t('label.follow') }}</span>/
+                        <span class="follower">{{ $t('label.follower') }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <f-button class="mt-2" :title="'label.edit'" :icon="true"></f-button>
             </div>
         </div>
     </div>
@@ -26,10 +43,11 @@ import { computed, defineComponent } from 'vue';
 import { useStore } from '@/store';
 import { checkRanking } from '@/services/common/checkRanking'
 import { FileExpense } from '@/constant/FileExpense'
+import FButton from '@/components/common/Button/FButton.vue';
 
 export default defineComponent({
     components: {
-        
+        FButton
     },
     setup() {
         const { state } = useStore();
@@ -62,7 +80,6 @@ export default defineComponent({
     margin: 0 0 16px;
     word-break: break-word;
     font-family: din-round,sans-serif;
-    text-align: left;
 
     span {
         font-size: 28px;
@@ -76,6 +93,22 @@ export default defineComponent({
         font-size: 17px;
         font-weight: 500;
         line-height: 20px;
+    }
+}
+
+.account-info {
+    color: #777;
+    .account__time {
+        span {
+            margin-left: .5rem;
+        }
+    }
+
+    .account__connect {
+        .follow {
+            margin-left: .5rem;
+        }
+
     }
 }
 </style>
