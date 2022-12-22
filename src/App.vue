@@ -1,20 +1,24 @@
 <template>
   <the-header></the-header>
-  <div class="row content">
-    <!-- left-bar -->
-    <the-sidebar class="col-3"></the-sidebar>
-    <!-- /left-bar -->
+  <div class="container">
+    <div class="row content">
+      <!-- left-bar -->
+      <the-sidebar class="col-3"></the-sidebar>
+      <!-- /left-bar -->
 
-    <Loading v-if="loading" />
-    
-    <!-- content -->
-    <router-view class="col-6 py-3"></router-view>
-    <!-- /content -->
+      <Loading v-if="loading" />
+      
+      <!-- content -->
+      <!-- <router-view></router-view> -->
+      <div class="col-9">
+        <AppLayout></AppLayout>
+      </div>
+      <!-- /content -->
 
-    <!-- right-bar -->
-    <the-right-bar class="col-3"></the-right-bar>
-    <!-- /right-bar -->
-
+      <!-- right-bar -->
+      <!-- <the-right-bar class="col-3"></the-right-bar> -->
+      <!-- /right-bar -->
+    </div>
   </div>
 </template>
 
@@ -23,16 +27,18 @@ import { computed, defineComponent } from "vue";
 
 import TheHeader from "@/components/decorator/TheHeader.vue";
 import TheSidebar from "@/components/decorator/TheSidebar.vue";
-import TheRightBar from "@/components/decorator/TheRightBar.vue";
+// import TheRightBar from "@/components/decorator/TheRightBar.vue";
 import Loading from '@/components/common/Loading/FLoading.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
 import { useStore } from "./store";
 
 export default defineComponent({
   components: {
     TheHeader,
     TheSidebar,
-    TheRightBar,
+    // TheRightBar,
     Loading,
+    AppLayout
   },
   setup() {
     const {state} = useStore();
@@ -56,7 +62,7 @@ export default defineComponent({
 
 .content {
   // display: flex;
-  background-color: #f0f2f5;
+  // background-color: #f0f2f5;
   // height: 100vh;
 }
 </style>
