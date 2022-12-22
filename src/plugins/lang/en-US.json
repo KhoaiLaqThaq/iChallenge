@@ -1,11 +1,18 @@
 {
     "message": {
-
+        "verifyEmail": {
+            "yet": "Your email not verified",
+            "now": "Verify now"
+        }
     },
     "label": {
-        "home": "Home",
         "about": "About",
+        "account": "Account",
+        "home": "Home",
         "conquer": "Conquer",
+        "created": {
+            "prioritized": "Prioritized"
+        },
         "exams": "Exams",
         "question": "Questions",
         "report": "Report",
@@ -23,16 +30,39 @@
         "friend": "Friend",
         "fastAccess": "Fast Access",
         "notification": "Notification",
-        "created": {
-            "prioritized": "Prioritized"
-        },
+        "notfound": "Not Found",
+        "status": "Status",
+        "members": "Members",
+        "memberToJoined": "Members To Joined",
+        "yourpoint": "Your Point",
+        "password": "Password",
         "time": {
             "second": "Second",
             "minute": "Minutes",
             "hour": "Hour",
             "day": "Day"
         },
-        "showMore": "Show more"
+        "showMore": "Show more",
+        "title": {
+            "myChallenge": "My Challenges",
+            "recentChallenge": "Recent Challenges",
+            "suggestChallenge": "Suggest Challenges"
+        },
+        "settingAccount": {
+            "avatar": "Avatar",
+            "name": "Name",
+            "username": "Username",
+            "email": "Email"
+        },
+        "management": {
+            "course": "Course Management"
+        },
+        "role": {
+            "private": "Private Rules"
+        },
+        "view": {
+            "yourProfile": "View Your Profile"
+        }
     },
     "pagination": {
         "size": "Page size",

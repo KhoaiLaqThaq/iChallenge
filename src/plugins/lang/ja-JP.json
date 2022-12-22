@@ -1,11 +1,18 @@
 {
     "message": {
-
+        "verifyEmail": {
+            "yet": "メールアドレスが確認されていません",
+            "now": "今すぐ確認"
+        }
     },
     "label": {
-        "home": "家",
         "about": "約",
+        "account": "アカウント",
+        "home": "家",
         "conquer": "征服する",
+        "created": {
+            "prioritized": "優先される"
+        },
         "exams": "テスト",
         "question": "質問",
         "report": "報告",
@@ -23,16 +30,39 @@
         "friend": "友達",
         "fastAccess": "高速アクセス",
         "notification": "通知",
-        "created": {
-            "prioritized": "優先される"
-        },
+        "notfound": "見つかりません",
+        "status": "状態",
+        "members": "メンバー",
+        "memberToJoined": "加入するメンバー",
+        "yourpoint": "あなたのポイント",
+        "password": "パスワード",
         "time": {
             "second": "秒",
             "minute": "分",
             "hour": "時間",
             "day": "日"
         },
-        "showMore": "もっと見せる"
+        "showMore": "もっと見せる",
+        "title": {
+            "myChallenge": "私の挑戦",
+            "recentChallenge": "最近の挑戦",
+            "suggestChallenge": "挑戦を提案する"
+        },
+        "settingAccount": {
+            "avatar": "アバター",
+            "name": "名前",
+            "username": "ユーザー名",
+            "email": "Eメール"
+        },
+        "management": {
+            "course": "コース管理"
+        },
+        "role": {
+            "private": "プライベートルール"
+        },
+        "view": {
+            "yourProfile": "プロフィールを見る"
+        }
     },
     "pagination": {
         "size": "ページサイズ",

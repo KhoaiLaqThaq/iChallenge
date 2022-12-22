@@ -1,11 +1,18 @@
 {
     "message": {
-
+        "verifyEmail": {
+            "yet": "Email chưa được xác minh",
+            "now": "Xác thực ngay"
+        }
     },
     "label": {
-        "home": "Trang chủ",
         "about": "Về chúng tôi",
+        "account": "Tài khoản",
+        "home": "Trang chủ",
         "conquer": "Chinh phục",
+        "created": {
+            "prioritized": "Ưu tiên"
+        },
         "exams": "Bài thi",
         "question": "Câu hỏi",
         "report": "Báo cáo",
@@ -23,16 +30,39 @@
         "friend": "Bạn bè",
         "fastAccess": "Truy cập nhanh",
         "notification": "Thông báo",
-        "created": {
-            "prioritized": "Ưu tiên"
-        },
+        "notfound": "Không tìm thấy",
+        "status": "Trạng thái",
+        "members": "Người tham gia",
+        "memberToJoined": "Thành viên đã tham gia",
+        "yourpoint": "Điểm của bạn",
+        "password": "Mật khẩu",
         "time": {
             "second": "Giây",
             "minute": "Phút",
             "hour": "Giờ",
             "day": "Ngày"
         },
-        "showMore": "Xem thêm"
+        "showMore": "Xem thêm",
+        "title": {
+            "myChallenge": "Thử thách của tôi",
+            "recentChallenge": "Thử thách gần đây",
+            "suggestChallenge": "Thử thách gợi ý"
+        },
+        "settingAccount": {
+            "avatar": "Ảnh hồ sơ",
+            "name": "Tên",
+            "username": "Tên đăng  nhập",
+            "email": "Email"
+        },
+        "management": {
+            "course": "Quản lý khóa học"
+        },
+        "role": {
+            "private": "Quyền riêng tư"
+        },
+        "view": {
+            "yourProfile": "Xem hồ sơ của bạn"
+        }
     },
     "pagination": {
         "size": "Page size",
