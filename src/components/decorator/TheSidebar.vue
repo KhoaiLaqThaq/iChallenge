@@ -52,7 +52,7 @@ export default defineComponent({
             text-decoration: none;
             color: #000000a2;
             font-weight: 600;
-            min-width: 356px;
+            width: 100%;
             display: flex;
 
             span {
@@ -64,9 +64,13 @@ export default defineComponent({
             
             &:hover {
                 background-color: #d0d0d075;
-                border-radius: 5px;
+                border-radius: 10px;
             }
         }
+    }
+    .router-link-exact-active {
+        border-radius: 10px;
+        background-color: #d0d0d075;
     }
 }
 </style>

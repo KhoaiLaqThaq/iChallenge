@@ -5,6 +5,8 @@ import { i18n } from './plugins/i18n'
 import router from './router'
 import store, {key} from './store'
 import "@/assets/scss/style.scss"
+import "@/assets/scss/sizing.scss"
+import "@/assets/scss/position.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 

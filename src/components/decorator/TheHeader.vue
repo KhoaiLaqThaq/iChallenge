@@ -27,7 +27,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 nav {
     height: 58px;
-    box-shadow: 2px 2px 11px #ccc;
+    box-shadow: 2px 2px 11px #cccccc78;
     .navbar-brand {
         width: 20%;
     }
