@@ -5,7 +5,7 @@
         <!-- /my exams -->
         
         <!-- recent exams -->
-        <recent-exam class="mb-3"></recent-exam>
+        <recent-exam class="mb-3" :cid="cid"></recent-exam>
         <!-- /recent exams -->
 
         <!-- suggest exams -->
@@ -18,9 +18,9 @@ import { watch, computed, defineComponent } from 'vue';
 import { useRoute } from 'vue-router';
 
 import { useStore } from '@/store';
-import MyExam from '@/views/Exam/MyExam.vue'
-import RecentExam from '@/views/Exam/RecentExam.vue'
-import SuggestExam from '@/views/Exam/SuggestExam.vue';
+import MyExam from '@/views/Exam/MyExam/index.vue'
+import RecentExam from '@/views/Exam/RecentExam/index.vue'
+import SuggestExam from '@/views/Exam/SuggestExam/index.vue';
 
 export default defineComponent({
     components: {
