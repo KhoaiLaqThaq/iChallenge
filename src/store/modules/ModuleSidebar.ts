@@ -2,7 +2,7 @@ import { Module } from "vuex";
 
 const items = [
     {
-        name: "Profile",
+        name: "ProfileInformations",
         imageURL: "avatar.png",
         title: "label.profile"
     },

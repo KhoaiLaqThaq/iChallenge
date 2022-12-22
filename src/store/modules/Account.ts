@@ -3,6 +3,7 @@ import { Module } from "vuex";
 export interface IAccountState {
     id: number;
     cid: string;
+    name: string;
     username: string;
     fullname: string;
     email: string;
@@ -24,7 +25,8 @@ const module: Module<IAccountState, any> = {
     state: {
         id: 0,
         cid: '65f9af5d-f23f-4065-ac85-da725569fdcd',
-        username: 'Challenge Me',
+        name: 'Challenge Me',
+        username: 'challenge_me',
         fullname: 'HenryNguyen',
         email: '',
         verify_email: false,
