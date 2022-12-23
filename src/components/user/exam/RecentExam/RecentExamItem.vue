@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 d-flex box zoom-in-little mb-3" v-if="exam">
+    <div class="col-12 d-flex box zoom-in-little mb-3 recent-item" v-if="exam">
         <div class="exam-thumbnail p-3">
             <img src="@/assets/images/cetification.png" width="100" height="100" alt="">
         </div>
@@ -9,7 +9,7 @@
             <!-- status -->
             <div class="status">
                 <span class="text-secondary">{{ $t('label.status') }}:</span>
-                <span class=" fw-bold" 
+                <span class="ms-1 fw-bold" 
                     :class="classColor(exam.accountExam.status)" 
                     v-if="exam.accountExam">{{ exam.accountExam.status }}</span>
             </div>
@@ -64,6 +64,9 @@ export default defineComponent({
 
 </script>
 <style lang="scss" scoped>
+.recent-item {
+    border: 1px solid rgba(150, 150, 150, 0.372);
+}
 .exam-thumbnail {
     text-align: left;
 }

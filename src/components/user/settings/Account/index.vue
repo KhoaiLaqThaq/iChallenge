@@ -80,6 +80,9 @@ export default defineComponent({
     input[type="text"] {
       background-color: #7777770d;
       border: 2px solid #77777754;
+      &:active, &:focus {
+        background-color: #fff;
+      }
     }
   }
   .title {

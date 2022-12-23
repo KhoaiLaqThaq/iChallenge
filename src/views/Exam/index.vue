@@ -1,7 +1,7 @@
 <template>
     <div class="container-box">
         <!-- my exams -->
-        <my-exam v-id="cid" :cid="cid" class="mb-3"></my-exam>
+        <my-exam v-if="cid" :cid="cid" class="mb-3"></my-exam>
         <!-- /my exams -->
         
         <!-- recent exams -->

@@ -10,11 +10,13 @@
     </div>
 </template>
 <script lang="ts">
-import { ref, defineComponent, computed, watch } from 'vue';
+import { ref, defineComponent, computed } from 'vue';
 
 import { useStore } from '@/store';
 import ExamItem from '@/components/user/exam/MyExam/ExamItem.vue';
 import ShowMore from '@/components/user/exam/MyExam/ShowMore.vue';
+import FModal from '@/components/common/FModal/index.vue';
+import ExamItemNotification from '@/components/user/exam/MyExam/ExamItemNotification.vue';
 
 // service
 import {
@@ -26,6 +28,8 @@ export default defineComponent({
     components: {
         ExamItem,
         ShowMore,
+        FModal,
+        ExamItemNotification
     },
     props: {
         cid: {
@@ -57,13 +61,13 @@ export default defineComponent({
                 }
             },
             {
-                id: 1,
+                id: 2,
                 cid: "1839df12-f23f-4065-ac85-da725569fdcd",
                 accountId: 1,
                 title: "Challenge 5'",
                 createdDate: new Date(),
                 eSetup: {
-                    id: 1,
+                    id: 2,
                     maxMemberJoin: 58,
                     minToStart: 10,
                     timeToStart: new Date(),
@@ -73,13 +77,13 @@ export default defineComponent({
                 }
             },
             {
-                id: 1,
+                id: 3,
                 cid: "1839df12-f23f-4065-ac85-da725569fdcd",
                 accountId: 1,
                 title: "Challenge speed",
                 createdDate: new Date(),
                 eSetup: {
-                    id: 1,
+                    id: 3,
                     maxMemberJoin: 58,
                     minToStart: 10,
                     timeToStart: new Date(),
