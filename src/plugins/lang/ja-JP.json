@@ -3,6 +3,9 @@
         "verifyEmail": {
             "yet": "メールアドレスが確認されていません",
             "now": "今すぐ確認"
+        },
+        "exam": {
+            "notEnough": "開始の15分前にのみ参加できます." 
         }
     },
     "label": {
@@ -40,7 +43,8 @@
             "second": "秒",
             "minute": "分",
             "hour": "時間",
-            "day": "日"
+            "day": "日",
+            "start": "始める"
         },
         "showMore": "もっと見せる",
         "title": {

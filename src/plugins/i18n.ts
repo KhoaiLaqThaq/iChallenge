@@ -6,6 +6,7 @@ import viVN from '@/plugins/lang/vi-VN.json'
 type MessageSchema = typeof enUS
 
 export const i18n = createI18n<[MessageSchema], 'en-US' | 'ja-JP' | 'vi-VN'>({
+    legacy: false,
     locale: 'en-US',
     fallbackLocale: 'en-US',
     messages: {

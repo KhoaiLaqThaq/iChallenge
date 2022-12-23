@@ -3,6 +3,9 @@
         "verifyEmail": {
             "yet": "Email chưa được xác minh",
             "now": "Xác thực ngay"
+        },
+        "exam": {
+            "notEnough": "Chỉ có thể tham gia 15 phút trước khi bắt đầu ." 
         }
     },
     "label": {
@@ -40,7 +43,8 @@
             "second": "Giây",
             "minute": "Phút",
             "hour": "Giờ",
-            "day": "Ngày"
+            "day": "Ngày",
+            "start": "Bắt đầu"
         },
         "showMore": "Xem thêm",
         "title": {

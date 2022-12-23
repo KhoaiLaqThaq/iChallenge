@@ -3,6 +3,9 @@
         "verifyEmail": {
             "yet": "Your email not verified",
             "now": "Verify now"
+        },
+        "exam": {
+            "notEnough": "Can only join 15 minutes before to start." 
         }
     },
     "label": {
@@ -40,7 +43,8 @@
             "second": "Second",
             "minute": "Minutes",
             "hour": "Hour",
-            "day": "Day"
+            "day": "Day",
+            "start": "Start"
         },
         "showMore": "Show more",
         "title": {
