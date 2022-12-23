@@ -46,6 +46,7 @@ export default defineComponent({
         li {
             margin: 0 auto;
             display: flex;
+            margin-bottom: .5rem;
         }
 
         a {

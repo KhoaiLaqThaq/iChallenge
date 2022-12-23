@@ -1,5 +1,6 @@
 export const LayoutEnum = {
     UserLayout: "UserLayout",
     AdminLayout: "AdminLayout",
-    SettingLayout: "SettingLayout"
+    SettingLayout: "SettingLayout",
+    ChallengeLayout: "ChallengeLayout"
 };

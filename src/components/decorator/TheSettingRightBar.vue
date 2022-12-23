@@ -7,7 +7,7 @@
           <div class="account_info">
             <div class="account__name">{{ account.name }}</div>
             <div class="account__action">
-              <router-link :to="redirectProfile">
+              <router-link :to="redirectProfile" class="fw-bold text-theme">
                 {{ $t('label.view.yourProfile') }}
               </router-link>
             </div>
@@ -77,6 +77,7 @@ const redirectProfile = computed(() => (`/profile/${account.value.username}`))
         text-align: left;
         font-weight: 600;
         cursor: pointer;
+        margin-bottom: .2rem;
         a {
           text-decoration: none;
           color: rgba(0, 0, 0, 0.6352941176);
