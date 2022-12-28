@@ -1,5 +1,18 @@
 $colorTheme: #1cb0f6;
+$colorBodyTheme: #3c3c3c;
 
-.text-theme {
-    color: $colorTheme;
+.text-primary-theme {
+  color: $colorTheme;
+}
+
+.text-body-theme {
+  color: $colorBodyTheme;
+}
+
+.border-theme {
+  border: 2px solid #e5e5e5;
+}
+
+.border-bottom-theme {
+  border-bottom: 2px solid #e5e5e5;
 }

@@ -43,6 +43,7 @@ export default defineComponent({
         const exams: IExam[] = [
             {
                 id: 1,
+                cid: "",
                 title: "Challenge everyday",
                 topic: "Knowledge",
                 accountId: 1,
@@ -55,6 +56,7 @@ export default defineComponent({
             },
             {
                 id: 2,
+                cid: "",
                 title: "Challenge ZERO",
                 topic: "Knowledge",
                 accountId: 1,
@@ -67,6 +69,7 @@ export default defineComponent({
             },
             {
                 id: 3,
+                cid: "",
                 title: "Challenge Speed",
                 topic: "Knowledge",
                 accountId: 1,

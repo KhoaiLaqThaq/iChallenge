@@ -1,27 +1,35 @@
 <template>
-    <button :type="btnType">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front text"><img v-if="icon" src="@/assets/images/icon/icon_edit.svg" alt="" class="me-2"> {{ $t(title) }} </span>
-    </button>
+  <button :type="btnType">
+    <span class="shadow"></span>
+    <span class="edge" :class="color"></span>
+    <span class="front" :class="color">
+      <font-awesome-icon :icon="icon" v-if="icon" class="me-3" />
+      {{ $t(title) }} 
+    </span>
+  </button>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 export default defineComponent({
-    props: {
-        btnType: {
-            type: String,
-            default: "button"
-        },
-        title: {
-            type: String,
-            default: "Click"
-        },
-        icon: {
-            type: Boolean,
-            required: false
-        }
+  props: {
+    btnType: {
+      type: String,
+      default: "button"
     },
+    title: {
+      type: String,
+      default: "Click"
+    },
+    icon: {
+      type: String,
+      required: false
+    },
+    color: {
+      type: String,
+      required: false,
+      default: 'danger'
+    }
+  },
 })
 </script>
 <style lang="scss" scoped>
@@ -61,13 +69,24 @@ button {
         width: 100%;
         height: 100%;
         border-radius: 12px;
-        background: linear-gradient(
+        &.danger {
+          background: linear-gradient(
             to left,
             hsl(340deg 100% 16%) 0%,
             hsl(340deg 100% 32%) 8%,
             hsl(340deg 100% 32%) 92%,
             hsl(340deg 100% 16%) 100%
-        );
+          );
+        }
+        &.primary {
+          background: linear-gradient(
+            to left,
+            hsl(199deg 80% 47%) 0%,
+            hsl(199deg 100% 32%) 8%,
+            hsl(199deg 100% 32%) 92%,
+            hsl(199deg 80% 47%) 100%
+          );
+        }
     }
 
     .shadow {
@@ -91,13 +110,19 @@ button {
         padding: 12px 27px;
         border-radius: 12px;
         font-size: 1.1rem;
+        font-weight: 600;
         color: white;
-        background: hsl(345deg 100% 47%);
         will-change: transform;
         transform: translateY(-4px);
         transition: transform
             600ms
             cubic-bezier(.3, .7, .4, 1);
+        &.danger {
+          background: hsl(345deg 100% 47%);
+        }
+        &.primary {
+          background: hsl(199deg 80% 47%);
+        }
     }
 }
 

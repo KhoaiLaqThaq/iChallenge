@@ -6,20 +6,35 @@
         },
         "exam": {
             "notEnough": "Can only join 15 minutes before to start." 
+        },
+        "api": {
+            "failure": "Error: {0} - Something went wrong."
         }
     },
     "label": {
         "about": "About",
-        "account": "Account",
+        "account": {
+            "title": "Account",
+            "statistic": "Statistic",
+            "statistics": "Statistics"
+        },
         "home": "Home",
         "conquer": "Conquer",
         "created": {
             "prioritized": "Prioritized"
         },
+        "description": "Description",
         "exams": "Exams",
+        "exam": {
+            "eSetup": {
+                "minToStart": "Minimum {0} members to start",
+                "period": "Period to work",
+                "scoped": "Scoped"
+            }
+        },
         "question": "Questions",
         "report": "Report",
-        "settings": "Settings",
+        "settings": "Settings", 
         "profile": "Profile information",
         "friends": "Friends",
         "recents": "Recents",
@@ -48,6 +63,7 @@
         },
         "showMore": "Show more",
         "title": {
+            "title": "Title",
             "myChallenge": "My Challenges",
             "recentChallenge": "Recent Challenges",
             "suggestChallenge": "Suggest Challenges"

@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        list recent exams
     </div>
 </template>
 <script>

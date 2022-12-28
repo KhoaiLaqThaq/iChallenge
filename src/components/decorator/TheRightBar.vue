@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-3">
         <div class="rightbar py-3">
             <div class="account__access">
                 <div class="label">{{ $t('label.fastAccess') }}</div>

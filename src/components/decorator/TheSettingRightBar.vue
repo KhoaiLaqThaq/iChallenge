@@ -7,7 +7,7 @@
           <div class="account_info">
             <div class="account__name">{{ account.name }}</div>
             <div class="account__action">
-              <router-link :to="redirectProfile" class="fw-bold text-theme">
+              <router-link :to="redirectProfile" class="fw-bold text-primary-theme">
                 {{ $t('label.view.yourProfile') }}
               </router-link>
             </div>
@@ -15,7 +15,7 @@
         </div>
         <ul class="setting-items">
           <li class="setting-item">
-            <router-link class="w-100p d-block" :to="{name: 'ProfileEdit', params: {username: account.username}}">{{ $t('label.account') }}</router-link>
+            <router-link class="w-100p d-block" :to="{name: 'ProfileEdit', params: {username: account.username}}">{{ $t('label.account.title') }}</router-link>
           </li>
           <li class="setting-item">
             <router-link class="w-100p d-block" :to="{name: 'SettingCourse'}">{{ $t('label.management.course') }}</router-link>

@@ -44,6 +44,12 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Recents/index.vue'),
         meta: { layout: LayoutEnum.UserLayout }
       },
+      {
+        path: ':cid/:examId',
+        name: 'ExamBegin',
+        component: () => import('@/views/Exam/Process/index.vue'),
+        meta: { layout: LayoutEnum.ChallengeLayout }
+      }
     ]
   },
   {
@@ -66,7 +72,7 @@ const routes: Array<RouteRecordRaw> = [
         path: '',
         name: 'ProfileInformations',
         component: () => import('@/views/Profile/Info/index.vue'),
-        meta: { layout: LayoutEnum.SettingLayout }
+        meta: { layout: LayoutEnum.UserProfileLayout }
       },
       {
         path: ':username',

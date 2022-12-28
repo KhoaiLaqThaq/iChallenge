@@ -20,6 +20,14 @@
   font-weight: 600;
 }
 
+.rounded-full {
+  border-radius: 50%;
+}
+
+.rounded-10px {
+  border-radius: 10px !important;
+}
+
 .auto-scroll-y::-webkit-scrollbar {
   width: 5px;
   height: 10px;

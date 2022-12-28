@@ -6,17 +6,32 @@
         },
         "exam": {
             "notEnough": "開始の15分前にのみ参加できます." 
+        },
+        "api": {
+            "failure": "エラー: {0} - 何か問題が発生しました."
         }
     },
     "label": {
         "about": "約",
-        "account": "アカウント",
+        "account": {
+            "title": "アカウント",
+            "statistic": "統計",
+            "statistics": "統計"
+        },
         "home": "家",
         "conquer": "征服する",
         "created": {
             "prioritized": "優先される"
         },
+        "description": "説明",
         "exams": "テスト",
+        "exam": {
+            "eSetup": {
+                "minToStart": "これを開始するための最小 {0} メンバー",
+                "period": "働く期間",
+                "scoped": "範囲指定"
+            }
+        },
         "question": "質問",
         "report": "報告",
         "settings": "設定",
@@ -48,6 +63,7 @@
         },
         "showMore": "もっと見せる",
         "title": {
+            "title": "題名",
             "myChallenge": "私の挑戦",
             "recentChallenge": "最近の挑戦",
             "suggestChallenge": "挑戦を提案する"

@@ -15,7 +15,7 @@ body {
 .progress-loading {
   /* width: 100%;
   height: 100vh; */
-  background-color: #ffffffa0;
+  background-color: #ffffff;
   position: absolute;
   z-index: 999;
   top: 0;

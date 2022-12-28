@@ -1,36 +1,36 @@
 <template>
-    <div>
-        <div class="container-brand py-3">
-            <ul>
-                <li v-for="(item, index) in sidebar" :key="index">
-                    <router-link :to="{ name: item.name }" exact class="py-2 ps-2">
-                        <img :src="getImgURL(item.imageURL)" alt="#" width="36" height="36">
-                        <span class="ps-3">{{ $t(item.title) }}</span>
-                    </router-link>
-                </li>
-            </ul>
-        </div>
+  <div>
+    <div class="container-brand py-5">
+      <ul>
+        <li v-for="(item, index) in sidebar" :key="index">
+          <router-link :to="{ name: item.name }" exact class="py-2 ps-2">
+            <img :src="getImgURL(item.imageURL)" alt="#" width="36" height="36">
+            <span class="ps-3">{{ $t(item.title) }}</span>
+          </router-link>
+        </li>
+      </ul>
     </div>
+  </div>
 </template>
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
 import { useStore } from '@/store';
 
 export default defineComponent({
-    setup() {
-        const {state} = useStore();
-        const sidebar = computed(() => state.moduleSidebar.sidebar)
+  setup() {
+    const {state} = useStore();
+    const sidebar = computed(() => state.moduleSidebar.sidebar)
 
-        function getImgURL(imgURL: string) {
-            return require(`@/assets/images/${imgURL}`)
-        }
-        
-        return {
-            sidebar,
-
-            getImgURL
-        }
+    function getImgURL(imgURL: string) {
+      return require(`@/assets/images/${imgURL}`)
     }
+    
+    return {
+      sidebar,
+
+      getImgURL
+    }
+  }
 })
 </script>
 <style lang="scss" scoped>

@@ -8,10 +8,12 @@
 import { defineComponent } from 'vue';
 
 import MyRanking from '@/views/Home/MyRanking.vue'
+import TheRightBar from "@/components/decorator/TheRightBar.vue";
 
 export default defineComponent({
   components: {
-    MyRanking
+    MyRanking,
+    TheRightBar
   }
 })
 

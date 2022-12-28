@@ -19,9 +19,7 @@ import FModal from '@/components/common/FModal/index.vue';
 import ExamItemNotification from '@/components/user/exam/MyExam/ExamItemNotification.vue';
 
 // service
-import {
-    getTop3MyExam
-} from '@/services/ExamService'
+import ExamService from '@/services/ExamService'
 import { IExam } from '@/models/IExam';
 
 export default defineComponent({
@@ -96,7 +94,7 @@ export default defineComponent({
 
         function initData() {
             commit('setLoading', true)
-            getTop3MyExam(cid.value + '').then(res => {
+            ExamService.getTop3MyExam(cid.value + '').then(res => {
                 if (res.data) {
                     exams.value = res.data
                 }

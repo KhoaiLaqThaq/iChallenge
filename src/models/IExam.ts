@@ -1,11 +1,13 @@
 
 export interface IExam {
     id: Number;
+    cid: String;
     title: String;
     topic?: String;
+    description?: String;
     accountId: Number;
     createdDate?: any;
-    totalMember: Number;
+    totalMember?: Number;
     
     eSetup?: any;
     questions?: any;

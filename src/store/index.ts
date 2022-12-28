@@ -13,7 +13,7 @@ export interface State {
   account: IAccountState
   modulePost: IPostState,
   moduleSidebar: any,
-  moduleExam: IExamState,
+  moduleExam: any,
 }
 
 export const key: InjectionKey<Store<State>> = Symbol()

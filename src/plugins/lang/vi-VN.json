@@ -6,17 +6,32 @@
         },
         "exam": {
             "notEnough": "Chỉ có thể tham gia 15 phút trước khi bắt đầu ." 
+        },
+        "api": {
+            "failure": "Lỗi: {0} - Đã xảy ra lỗi."
         }
     },
     "label": {
         "about": "Về chúng tôi",
-        "account": "Tài khoản",
+        "account": {
+            "title": "Tài khoản",
+            "statistic": "Thống kê",
+            "statistics": "Các thống kê"
+        },
         "home": "Trang chủ",
         "conquer": "Chinh phục",
         "created": {
             "prioritized": "Ưu tiên"
         },
+        "description": "Mô tả",
         "exams": "Bài thi",
+        "exam": {
+            "eSetup": {
+                "minToStart": "Tối thiểu {0} người tham gia để bắt đầu",
+                "period": "Thời gian để làm",
+                "scoped": "Phạm vi"
+            }
+        },
         "question": "Câu hỏi",
         "report": "Báo cáo",
         "settings": "Cài đặt",
@@ -48,6 +63,7 @@
         },
         "showMore": "Xem thêm",
         "title": {
+            "title": "Tiêu đề",
             "myChallenge": "Thử thách của tôi",
             "recentChallenge": "Thử thách gần đây",
             "suggestChallenge": "Thử thách gợi ý"
